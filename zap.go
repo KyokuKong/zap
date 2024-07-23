@@ -50,7 +50,7 @@ type Config struct {
 //  1. A time package format string (e.g. time.RFC3339).
 //  2. A boolean stating whether to use UTC time zone or local.
 func Ginzap(logger ZapLogger, timeFormat string, utc bool) gin.HandlerFunc {
-	return GinzapWithConfig(logger, &Config{TimeFormat: timeFormat, UTC: utc, DefaultLevel: zapcore.InfoLevel})
+	return GinzapWithConfig(logger, &Config{TimeFormat: timeFormat, UTC: utc, DefaultLevel: zapcore.DebugLevel})
 }
 
 // GinzapWithConfig returns a gin.HandlerFunc using configs

@@ -1,4 +1,4 @@
-module github.com/gin-contrib/zap
+module github.com/KyokuKong/zap
 
 go 1.19
 
